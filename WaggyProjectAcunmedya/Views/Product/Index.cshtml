@@ -1,0 +1,68 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Ürünler";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+@{
+    int count = 0;
+}
+
+<table class="table table-bordered tabletable-hover">
+    <tr>
+        <th>#</th>
+        <th>Ürün Görseli</th>
+        <th>Ürün Adı</th>
+        <th>Fiyat</th>
+        <th>Ürün Puanı</th>
+        <th>Kategori</th>
+        <th>İşlemler</th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td><img src="@item.ImageUrl" style="height:75px;width:75px" /></td>
+            <td>@item.ProductName</td>
+            <td>@item.Price</td>
+            <td>@item.Review</td>
+            <td>@item.Category.CategoryName</td>
+            <td>
+                <a onclick="deleteProduct(@item.ProductId)"  class="btn btn-danger"> <i class="fa fa-trash"></i>   Sil</a>
+                <a href="/Product/UpdateProduct/@item.ProductId" class="btn btn-info"> <i class=" fa fa-pen"></i> Güncelle</a>
+            </td>
+        </tr>
+    }   
+</table>
+
+<br />
+<a href="/Product/CreateProduct" class="btn btn-primary"> <i class="fa fa-plus-circle"></i> Yeni Ürün</a>
+
+<script>
+
+    function deleteProduct(id)
+    {
+            Swal.fire({
+      title: "Silmek istediğinize emin misiniz?",
+      text: "Bu işlemi geri alamazsınız",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Evet, Sil!",
+      cancelButtonText: "İptal"
+    }).then((result) => {
+      if (result.isConfirmed) {
+          window.location.href= "/Product/DeleteProduct/" + id;
+        
+      }
+    });
+
+
+    }
+
+</script>
