@@ -1,83 +1,137 @@
 🐾 WaggyProject - Pet Shop Uygulaması
-
 📖 Proje Hakkında
-WaggyProject, Acun Medya Akademi tarafından verilen kapsamlı bir üçüncü proje olarak geliştirilmiştir. ASP.NET Core MVC mimarisi kullanılarak inşa edilen bu pet shop e-ticaret uygulaması, modern web geliştirme pratiklerini ve best practices'leri içermektedir.
 
-Proje, güçlü bir admin paneli sayesinde tüm ürün, kategori, kullanıcı ve sistem verilerinin dinamik olarak yönetilmesini sağlamaktadır. Arayüzdeki her içerik veritabanından gerçek zamanlı olarak çekilmekte ve güncellemektedir.
+WaggyProject, Acun Medya Akademi tarafından verilen kapsamlı bir üçüncü proje olarak geliştirilmiştir.
+ASP.NET Core MVC mimarisi kullanılarak oluşturulan bu pet shop e-ticaret uygulaması, modern web geliştirme pratiklerini ve best practices'leri içermektedir.
+
+Proje; güçlü bir admin paneli sayesinde ürün, kategori, kullanıcı ve diğer tüm içeriklerin dinamik olarak yönetilmesini sağlar. Arayüzdeki tüm veriler gerçek zamanlı olarak veritabanından çekilir ve güncellenir.
 
 🎓 Eğitim Danışmanları
-Erhan Gündüz - Proje Danışmanı
-Murat Yücedağ - Proje Danışmanı
-Acun Medya Akademi - Eğitim Kurumu
+
+Erhan Gündüz – Proje Danışmanı
+
+Murat Yücedağ – Proje Danışmanı
+
+Acun Medya Akademi – Eğitim Kurumu
+
 🚀 Temel Özellikler
 ✨ Dinamik İçerik Yönetimi
 
 Veritabanından gerçek zamanlı veri çekme ve güncelleme
+
 🛡️ Admin Paneli
 
-Ürünler, kategoriler, markalar ve kullanıcıların yönetimi
+Ürün, kategori, marka ve kullanıcı yönetimi
+
 CRUD (Oluştur, Oku, Güncelle, Sil) işlemleri
+
 Kapsamlı yönetim arayüzü
+
 👥 Kullanıcı Yönetimi
 
 ASP.NET Identity entegrasyonu
+
 Kullanıcı kayıt ve oturum açma
-Rol tabanlı yetkilendirme (Admin, Kullanıcı)
+
+Rol tabanlı yetkilendirme (Admin / Kullanıcı)
+
 Şifre ve profil yönetimi
+
 🛒 E-Ticaret Özellikleri
 
 Ürün listesi ve detay sayfaları
+
 Kategori filtreleme
+
 Sepet ve sipariş yönetimi
+
 📱 Responsive Tasarım
 
 Bootstrap 5 ile mobil uyumlu arayüz
-Masaüstü ve mobil cihazlarda optimal görüntü
+
+Masaüstü ve mobil cihazlarda optimal görünüm
+
 Kullanıcı dostu navigasyon
+
 🔒 Güvenlik
 
 Form validasyonları (Data Annotations)
+
 Authorize ve rol tabanlı erişim kontrolü
+
 Güvenli veri işleme
+
 🛠️ Kullanılan Teknolojiler
 Backend
-ASP.NET Core MVC 8.0 - Web framework
-Entity Framework Core - ORM (Object-Relational Mapping)
-LINQ - Veritabanı sorguları
-ASP.NET Identity - Kimlik doğrulama ve yetkilendirme
+
+ASP.NET Core MVC 8.0
+
+Entity Framework Core
+
+LINQ
+
+ASP.NET Identity
+
 Database
-SQL Server - İlişkisel veritabanı
-Db-First Approach - Veritabanından model oluşturma
+
+SQL Server
+
+Database First yaklaşımı
+
 Frontend
-HTML5 - Yapılandırma
-CSS3 - Stil
-Bootstrap 5 - Responsive framework
-JavaScript - İnteraktif özellikler
+
+HTML5
+
+CSS3
+
+Bootstrap 5
+
+JavaScript
+
 Diğer Araçlar
-Visual Studio Code / Visual Studio - Geliştirme ortamı
-Git - Sürüm kontrolü
-NuGet - Paket yöneticisi
+
+Visual Studio / Visual Studio Code
+
+Git – Sürüm kontrolü
+
+NuGet – Paket yöneticisi
 
 ✅ Validasyonlar
-Proje, Data Annotations kullanarak form validasyonlarını sağlamaktadır:
+
+Proje, Data Annotations kullanarak form validasyonlarını sağlar:
 
 Zorunlu alan kontrolleri
-Email formatı doğrulaması
-Karakter uzunluğu kontrolleri
+
+Email format kontrolü
+
+Karakter uzunluğu kontrolü
+
 Custom validasyonlar
+
 🎯 Öğrenilen Konseptler
+
 ✔️ ASP.NET Core MVC mimarisi
-✔️ Entity Framework Core ve ORM kavramları
+
+✔️ Entity Framework Core & ORM
+
 ✔️ LINQ sorguları
+
 ✔️ Database First yaklaşımı
-✔️ ASP.NET Identity entegrasyonu
+
+✔️ ASP.NET Identity
+
 ✔️ Rol tabanlı yetkilendirme
+
 ✔️ Responsive web tasarımı
+
 ✔️ ViewComponent kullanımı
-✔️ Data validation ve error handling
+
+✔️ Data validation & error handling
+
 ✔️ Async/Await programlama
 
 📸 Ekran Görüntüleri
+
 
 Ana Sayfa - Banner
 <img width="1227" height="654" alt="image" src="https://github.com/user-attachments/assets/a1c03dbd-4518-48da-9ad7-c1b65164985a" />
