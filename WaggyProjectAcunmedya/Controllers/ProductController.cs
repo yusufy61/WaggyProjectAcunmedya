@@ -7,7 +7,7 @@ using WaggyProjectAcunmedya.Entities;
 
 namespace WaggyProjectAcunmedya.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly WaggyContext _dbcontext;
@@ -36,13 +36,17 @@ namespace WaggyProjectAcunmedya.Controllers
             return View();
         }
 
+
         [HttpPost]
         public async Task<IActionResult> CreateProduct(Product product)
         {
+
+            
             if (product == null)
             {
                 return BadRequest();
             }
+
             _dbcontext.Products.Add(product);
             await _dbcontext.SaveChangesAsync();
             return RedirectToAction("Index");
@@ -69,6 +73,8 @@ namespace WaggyProjectAcunmedya.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateProduct(Product product)
         {
+            
+
             if (product == null)
             {
                 return BadRequest();

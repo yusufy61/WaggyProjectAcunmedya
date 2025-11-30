@@ -26,13 +26,20 @@ namespace WaggyProjectAcunmedya.Controllers
             // ispersistent = tarayıcı kapansa bile sistemde bile cookie kalsın mı demek istiyor.
             // lockout.. = 5 kere arka arkaya hata yaparsa işlemi kilitlemek ister misin diyoe soruyor
             var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
-            if (result.Succeeded)
+
+            if (!result.Succeeded)
             {
-                ModelState.AddModelError(string.Empty, "Kullanıcı Adı veya Şifre hatalı!");
-                return View(model);
+                ModelState.AddModelError(string.Empty, "Kullanıcı adı veya şifre hatalı!");
             }
 
-            return RedirectToAction("Index","Category");
+
+            return RedirectToAction("Index", "Category");
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Login");
         }
     }
 }

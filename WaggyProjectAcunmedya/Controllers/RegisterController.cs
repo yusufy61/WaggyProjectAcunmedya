@@ -33,16 +33,16 @@ namespace WaggyProjectAcunmedya.Controllers
 
             var result = await _userManager.CreateAsync(user, model.Password);
 
-            if (result.Succeeded)
+            if (!result.Succeeded)
             {
-                foreach( var error in result.Errors)
+                foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
                 return View(model);
             }
 
-            return RedirectToAction("Index","Login");
+            return RedirectToAction("Index", "Login");
         }
     }
 }

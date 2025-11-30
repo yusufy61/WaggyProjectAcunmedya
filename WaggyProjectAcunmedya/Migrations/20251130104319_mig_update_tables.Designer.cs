@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WaggyProjectAcunmedya.Context;
 
@@ -11,9 +12,11 @@ using WaggyProjectAcunmedya.Context;
 namespace WaggyProjectAcunmedya.Migrations
 {
     [DbContext(typeof(WaggyContext))]
-    partial class WaggyContextModelSnapshot : ModelSnapshot
+    [Migration("20251130104319_mig_update_tables")]
+    partial class mig_update_tables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
