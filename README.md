@@ -1,12 +1,12 @@
-🐾 WaggyProject - Pet Shop Uygulaması
-📖 Proje Hakkında
+# 🐾 WaggyProject - Pet Shop Uygulaması
+## 📖 Proje Hakkında
 
 WaggyProject, Acun Medya Akademi tarafından verilen kapsamlı bir üçüncü proje olarak geliştirilmiştir.
 ASP.NET Core MVC mimarisi kullanılarak oluşturulan bu pet shop e-ticaret uygulaması, modern web geliştirme pratiklerini ve best practices'leri içermektedir.
 
 Proje; güçlü bir admin paneli sayesinde ürün, kategori, kullanıcı ve diğer tüm içeriklerin dinamik olarak yönetilmesini sağlar. Arayüzdeki tüm veriler gerçek zamanlı olarak veritabanından çekilir ve güncellenir.
 
-🎓 Eğitim Danışmanları
+## 🎓 Eğitim Danışmanları
 
 Erhan Gündüz – Proje Danışmanı
 
@@ -14,12 +14,12 @@ Murat Yücedağ – Proje Danışmanı
 
 Acun Medya Akademi – Eğitim Kurumu
 
-🚀 Temel Özellikler
-✨ Dinamik İçerik Yönetimi
+## 🚀 Temel Özellikler
+### ✨ Dinamik İçerik Yönetimi
 
 Veritabanından gerçek zamanlı veri çekme ve güncelleme
 
-🛡️ Admin Paneli
+### 🛡️ Admin Paneli
 
 Ürün, kategori, marka ve kullanıcı yönetimi
 
@@ -27,7 +27,7 @@ CRUD (Oluştur, Oku, Güncelle, Sil) işlemleri
 
 Kapsamlı yönetim arayüzü
 
-👥 Kullanıcı Yönetimi
+### 👥 Kullanıcı Yönetimi
 
 ASP.NET Identity entegrasyonu
 
@@ -37,7 +37,7 @@ Rol tabanlı yetkilendirme (Admin / Kullanıcı)
 
 Şifre ve profil yönetimi
 
-🛒 E-Ticaret Özellikleri
+### 🛒 E-Ticaret Özellikleri
 
 Ürün listesi ve detay sayfaları
 
@@ -45,7 +45,7 @@ Kategori filtreleme
 
 Sepet ve sipariş yönetimi
 
-📱 Responsive Tasarım
+### 📱 Responsive Tasarım
 
 Bootstrap 5 ile mobil uyumlu arayüz
 
@@ -53,7 +53,7 @@ Masaüstü ve mobil cihazlarda optimal görünüm
 
 Kullanıcı dostu navigasyon
 
-🔒 Güvenlik
+### 🔒 Güvenlik
 
 Form validasyonları (Data Annotations)
 
@@ -61,7 +61,7 @@ Authorize ve rol tabanlı erişim kontrolü
 
 Güvenli veri işleme
 
-🛠️ Kullanılan Teknolojiler
+### 🛠️ Kullanılan Teknolojiler
 Backend
 
 ASP.NET Core MVC 8.0
@@ -96,7 +96,7 @@ Git – Sürüm kontrolü
 
 NuGet – Paket yöneticisi
 
-✅ Validasyonlar
+### ✅ Validasyonlar
 
 Proje, Data Annotations kullanarak form validasyonlarını sağlar:
 
@@ -108,7 +108,7 @@ Karakter uzunluğu kontrolü
 
 Custom validasyonlar
 
-🎯 Öğrenilen Konseptler
+### 🎯 Öğrenilen Konseptler
 
 ✔️ ASP.NET Core MVC mimarisi
 
@@ -130,7 +130,7 @@ Custom validasyonlar
 
 ✔️ Async/Await programlama
 
-📸 Ekran Görüntüleri
+## 📸 Ekran Görüntüleri
 
 
 Ana Sayfa - Banner
